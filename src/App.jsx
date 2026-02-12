@@ -1,11 +1,11 @@
-import Dashboard from './pages/Dashboard'
-import { Route, Routes } from 'react-router-dom'
-import AccountPage from './pages/employee/AccountPage';
+import { Route, Routes } from 'react-router-dom';
 import DoctorCalendarPage from './pages/calendar/DoctorCalendarPage';
-import DrugPage from './pages/order/DrugPage';
-import ProductPage from './pages/order/ProductPage';
-import OrdersPage from './pages/order/OrdersPage';
+import Dashboard from './pages/Dashboard';
+import AccountPage from './pages/employee/AccountPage';
 import MacroPage from './pages/macro/MacroPage';
+import DrugPage from './pages/order/DrugPage';
+import OrdersPage from './pages/order/OrdersPage';
+import ProductPage from './pages/order/ProductPage';
 import WaitingList from './pages/patient/WaitingList';
 import StatisticsPage from './pages/statistics/StatisticsPage';
 
@@ -23,7 +23,6 @@ function App() {
         <Route path='/admin/orders' element={<OrdersPage/>}/>
         <Route path='/admin/macro' element={<MacroPage />}/>
         <Route path='/admin/stats' element={<StatisticsPage />} />
-
 
       </Routes>
     </div>
